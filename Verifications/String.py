@@ -1,3 +1,6 @@
+import sys
+
+
 def String_verif(
     x,
 ):  # Fonction que verifie que la chaine de caractere n'est pas composee d'entier
@@ -14,3 +17,9 @@ def String_verif(
         return "True"
     else:
         return "False"
+
+
+# Tester
+# if __name__ == "__main__":
+#     for arg in sys.argv[1:]:
+#         print(String_verif(arg))

@@ -1,3 +1,6 @@
+import sys
+
+
 def Cin_verif(x):  # Fonction qui verifie que le Cin est composee de 8 chiffres
     a = 0
     try:
@@ -9,3 +12,8 @@ def Cin_verif(x):  # Fonction qui verifie que le Cin est composee de 8 chiffres
     else:
         return "True"
 
+
+# Tester
+# if __name__ == '__main__':
+#     for arg in sys.argv[1:]:
+#         print(Cin_verif(arg))
