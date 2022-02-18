@@ -3,7 +3,6 @@ import sys
 sys.path.insert(1, "../")
 import numpy as np
 import matplotlib.pyplot as plt
-import M_P
 
 
 def Consultation_An():
@@ -34,4 +33,3 @@ def Consultation_An():
         plt.bar(i, Nbr_consultation[a], label=str(i), width=0.3)
     plt.legend()
     plt.show()
-    M_P()

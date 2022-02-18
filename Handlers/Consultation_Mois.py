@@ -3,11 +3,10 @@ import sys
 sys.path.insert(1, "../")
 import numpy as np
 import matplotlib.pyplot as plt
-import M_P
 
 
 def Consulation_Mois():
-    File = open("Nbr_consultation.txt")
+    File = open("../DATA/Nbr_consultation.txt")
     Liste = []
     Nbr_consultation = []
     for ligne in File:
@@ -35,4 +34,3 @@ def Consulation_Mois():
         plt.bar(i, Nbr_consultation[a], label="n" + ":" + str(i), width=0.5)
     plt.legend()
     plt.show()
-    M_P()
