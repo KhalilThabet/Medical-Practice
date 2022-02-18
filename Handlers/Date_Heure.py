@@ -1,6 +1,11 @@
+import os
+import sys
+
+sys.path.insert(1, "../")
+from getch import getch as m
+
+
 def Date_Heure():  # fonction qui permet au user d'entrer la date et l'heure si demander
-    import os
-    import msvcrt as m
 
     while 1:
         i = 0
@@ -20,7 +25,7 @@ def Date_Heure():  # fonction qui permet au user d'entrer la date et l'heure si 
                     a = 0
             F[i] = Date
             i += 1
-            os.system("cls")
+            os.system("clear")
         if int(F[3] + F[4]) in [1, 3, 5, 7, 8, 10, 12]:
             if int(F[0] + F[1]) in range(31):
                 break
@@ -49,7 +54,7 @@ def Date_Heure():  # fonction qui permet au user d'entrer la date et l'heure si 
                     a = 0
             A[j] = Heure
             j += 1
-            os.system("cls")
+            os.system("clear")
         if (int(A[0] + A[1]) in range(23)) and (int(A[3] + A[4]) in range(59)):
             break
     X = "".join(F)
