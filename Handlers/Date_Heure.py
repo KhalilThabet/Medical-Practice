@@ -2,7 +2,7 @@ import os
 import sys
 
 sys.path.insert(1, "../")
-from getch import getch as m
+import getch as m
 
 
 def Date_Heure():  # fonction qui permet au user d'entrer la date et l'heure si demander

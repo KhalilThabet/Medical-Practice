@@ -1,7 +1,7 @@
 import sys
 
 sys.path.insert(1, "../")
-from getch import getch as m
+import getch as m
 from Handlers.Medicaments import medicament
 
 def Ordonnance():
@@ -53,17 +53,14 @@ def Ordonnance():
                                     break
                             sub_file.close()
                             sub_file = open(Nom_nouveau_fichier)
-                            New_fichier = "Historique" + T[1] + ".txt"
-                            print("a")
-                            Fichier_historique = open(New_fichier, "a")
+                            New_fichier = "Historique_" + T[0] + ".txt"
+                            Fichier_historique = open("../DATA/{}".format(New_fichier), "a")
                             A = (
                                 "\n"
                                 + "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
                                 + "\n"
                             )
-                            print("b")
                             ligne2 = sub_file.readlines()
-                            print(ligne2)
                             Fichier_historique.writelines(ligne2)
                             Fichier_historique.writelines(A)
                             Fichier_historique.close()
