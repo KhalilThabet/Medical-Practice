@@ -1,20 +1,21 @@
-import os
-import msvcrt as m
-from Medicaments import medicament
-from Src.M_P import M_P
+import sys
+
+sys.path.insert(1, "../")
+from getch import getch as m
+from Handlers.Medicaments import medicament
 
 def Ordonnance():
 
-    Cin = input("veuillez entrer le CIN :")
+    Cin = input("veuillez entrer le CIN :\t")
     try:
-        File = open("rdv.txt")
+        File = open("../DATA/rdv.txt")
         Patient = " "
         Tp = " "
         for ligne in File:
             L = ligne.split(" ")
             if L[0] == Cin:
                 try:
-                    File_Patient = open("patient.txt")
+                    File_Patient = open("../DATA/patient.txt")
                     for ligne_patient in File_Patient:
                         T = ligne_patient.split(" ")
                         if T[0] == Cin:
@@ -37,7 +38,7 @@ def Ordonnance():
                                 Tp = medicament()
                                 sub_file.write(Tp)
                                 print(
-                                    "Voulez-vous inscrire un autre medicament? ", end=""
+                                    "Voulez-vous inscrire un autre medicament? ", end=" "
                                 )
                                 print("*1- oui", end=" ")
                                 print("*2- non")
@@ -67,7 +68,7 @@ def Ordonnance():
                             Fichier_historique.writelines(A)
                             Fichier_historique.close()
                             sub_file.close()
-                            Fichier0 = open("Nbr_consultation.txt", "a")
+                            Fichier0 = open("../DATA/Nbr_consultation.txt", "a")
                             Fichier1 = open(Nom_nouveau_fichier)
                             L1 = Fichier1.readline()
                             T = L1.split(" ")
@@ -80,8 +81,7 @@ def Ordonnance():
                             sub_file.close()
                     File_Patient.close()
                 except:
-                    print("fichier patient.txt introuvable")
+                    print("fichier patient.txt introuvable\n")
         File.close()
     except:
-        print("fichier rdv.txt introuvable")
-    M_P()
+        print("fichier rdv.txt introuvable\n")

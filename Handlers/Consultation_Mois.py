@@ -1,6 +1,10 @@
+import sys
+
+sys.path.insert(1, "../")
 import numpy as np
 import matplotlib.pyplot as plt
-from Src.M_P import M_P
+import M_P
+
 
 def Consulation_Mois():
     File = open("Nbr_consultation.txt")

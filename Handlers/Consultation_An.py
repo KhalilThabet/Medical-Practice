@@ -1,10 +1,14 @@
+import sys
+
+sys.path.insert(1, "../")
 import numpy as np
 import matplotlib.pyplot as plt
-from Src.M_P import M_P
+import M_P
+
 
 def Consultation_An():
 
-    File = open("Nbr_consultation.txt")
+    File = open("../DATA/Nbr_consultation.txt")
     Liste = []
     Nbr_consultation = []
     for ligne in File:
