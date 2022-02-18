@@ -14,7 +14,6 @@ def Ajouter_RDV():
             "Veuillez saisir un Cin Correct! ou Appuyez sur Q pour Retourner a la page d'acceuil\t"
         )
         if Cin.upper() == "\Q":
-            # M_P()
             break
     c = Date_Heure()
     ligne = Cin + " " + c + "\n"
