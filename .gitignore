@@ -1,0 +1,10 @@
+pyvenv.cfg
+share/
+lib/
+lib64/
+bin/
+Verifications/__pycache__/
+Handlers/__pycache__/
+Src/__pycache__/
+DATA/*.txt
+__pycache__/
