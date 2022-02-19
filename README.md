@@ -1,90 +1,49 @@
-### Medical-Practice
+# <b>Medical-Practice</b>
 
-** School Project coded in Python **
+  
 
-# <b> <p> Medical-Practice</b>
+### School Mini-Project coded in Python
 
-<p>
+A windows terminal application for a medical practice aiming at managing ressources and patient's appointments and store them in a database.
 
-**School Project coded in Python**
+### DATABASE
+The data of the appointments are stored in files inside the DATA directory.
+### FORMAT
+> ### patient.txt
+> * CIN NOM PRENOM AGE SEXE 
+>### rdv.txt
+>* CIN DATE HEURE
+>### Historique_CIN.txt
+>* CIN NOM PRENOM DATE HEURE
+>* MEDICAMENT QUANTITE DUREE
+>### Nbr_Consultation.txt
+>* MONTH YEAR
 
-**ScreenShot**
+
+### SCREENSHOT
+
+  
 
 ![alt text](ScreenShotFrontPage.png)
 
-**Functions**
+  
 
-> > [M_P](#M_P)
+### Usage
+Clone Repository
+> $ git clone https://github.com/khalilthabet/medical-practice.git
 
-> > [M_P_L](#M_P_L)
+Install virtual environment
+> python3 -m venv .
 
-> > [Consultation_An](#Consultation_An)
+Activate The Environment
+> source ./bin/activate
 
-> > [Consulation_Mois](#Consultation_Mois)
+Install dependencies
+> pip install matplotlib
 
-> > [Historique_patient](#Historique_patient)
+Run Program
+> cd medical-practice/Src && python3 M_P.py
 
-> > [Ordonnance](#Ordonnance)
+### NOTES
 
-> > [medicament](#medicament)
-
-> > [Supprimer_patient](#Supprimer_patient)
-
-> > [ajouter_Patient](#ajouter_Patient)
-
-> > [Creation_fichier_patient](#Creation_fichier_patient)
-
-> > [Modify_RDV](#Modify_RDV)
-
-> > [Annuler_RDV](#Annuler_RDV)
-
-> > [Ajouter_RDV](#Ajouter_RDV)
-
-> > [Sexe_verif](#Sexe_verif)
-
-> > [Date_Heure](#Date_Heure)
-
-> > [String_verif](#String_verif)
-
-> > [Age_verif](#Age_verif)
-
-> > [Cin_verif](#Cin_verif)
-
-#M_P
-<br>
-**Main_Program**
-<br>
-
-#M_P_L
-<br>
-#Consultation_An
-<br>
-#Consulation_Mois
-<br>
-#Historique_patient
-<br>
-#Ordonnance
-<br>
-#medicament
-<br>
-#Supprimer_patient
-<br>
-#ajouter_Patient
-<br>
-#Creation_fichier_patient
-<br>
-#Modify_RDV
-<br>
-#Annuler_RDV
-<br>
-#Ajouter_RDV
-<br>
-#Sexe_verif
-<br>
-#Date_Heure
-<br>
-#String_verif
-<br>
-#Age_verif
-<br>
-#Cin_verif
+In case there is an issue please submit an issue to this project and give us your feedback.
