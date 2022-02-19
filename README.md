@@ -9,15 +9,24 @@ A windows terminal application for a medical practice aiming at managing ressour
 ### DATABASE
 The data of the appointments are stored in files inside the DATA directory.
 ### FORMAT
-> ### patient.txt
-> * CIN NOM PRENOM AGE SEXE 
->### rdv.txt
->* CIN DATE HEURE
->### Historique_CIN.txt
->* CIN NOM PRENOM DATE HEURE
->* MEDICAMENT QUANTITE DUREE
->### Nbr_Consultation.txt
->* MONTH YEAR
+
+### patient.txt
+```r
+CIN | NOM | PRENOM | AGE | SEXE
+``` 
+### rdv.txt
+```r
+CIN DATE HEURE
+```
+### Historique_CIN.txt
+```r
+CIN | NOM | PRENOM | DATE | HEURE
+MEDICAMENT | QUANTITE | DUREE
+```
+### Nbr_Consultation.txt
+```r
+MONTH | YEAR
+```
 
 
 ### SCREENSHOT
