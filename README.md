@@ -16,7 +16,7 @@ CIN | NOM | PRENOM | AGE | SEXE
 ``` 
 ### rdv.txt
 ```r
-CIN DATE HEURE
+CIN | DATE | HEURE
 ```
 ### Historique_CIN.txt
 ```r
