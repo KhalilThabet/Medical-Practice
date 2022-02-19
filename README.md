@@ -39,19 +39,28 @@ MONTH | YEAR
 
 ### Usage
 Clone Repository
+```linux 
 > $ git clone https://github.com/khalilthabet/medical-practice.git
+```
 
 Install virtual environment
-> python3 -m venv .
+```linux
+> $ python3 -m venv .
+```
 
 Activate The Environment
-> source ./bin/activate
+```linux
+> $ source ./bin/activate
+```
 
 Install dependencies
-> pip install matplotlib
-
+```linux
+> $ pip install matplotlib
+```
 Run Program
-> cd medical-practice/Src && python3 M_P.py
+```linux
+> $ cd medical-practice/Src && python3 M_P.py
+```
 
 ### NOTES
 
