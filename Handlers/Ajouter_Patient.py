@@ -7,7 +7,7 @@ from Verifications.String import String_verif
 from Verifications.Age import Age_verif
 from Verifications.Sexe import Sexe_verif
 
-def ajouter_Patient():
+def ajouter_Patient(System):
     try:
         File = open("../DATA/patient.txt")
         Test_Cin = File.readlines()

@@ -6,14 +6,15 @@ from Verifications.String import String_verif
 from Verifications.Age import Age_verif
 from Verifications.Sexe import Sexe_verif
 
-def Creation_fichier_patient():
+def Creation_fichier_patient(System):
     i = 0
     while i < 10:
         Dpatient = {}
+        ligne = ""
         try:
             File = open("../DATA/patient.txt")
             Test_Cin = File.readlines()
-            ligne = ""
+            
             Dpatient["Cin"] = input("saisir Cin\t")
             while (Cin_verif(Dpatient["Cin"]) == "False") and (a == 1):
                 Dpatient["Cin"] = input("saisir un Cin Correct\t")

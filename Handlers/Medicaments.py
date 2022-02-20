@@ -1,4 +1,4 @@
-def medicament():
+def medicament(System):
     Nom_medicament = input("saisir le nom du medicament:\t")
     quantite = input("saisir la quantite :\t")
     Duree = input("saisir la duree de traitement:\t")

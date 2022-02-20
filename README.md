@@ -41,6 +41,7 @@ MONTH | YEAR
 Clone Repository
 ```linux 
 > $ git clone https://github.com/khalilthabet/medical-practice.git
+> $ cd src
 ```
 
 Install virtual environment
@@ -50,16 +51,19 @@ Install virtual environment
 
 Activate The Environment
 ```linux
-> $ source ./bin/activate
+linux   > $ source ./bin/activate
+windows > Scripts\activate
 ```
 
 Install dependencies
 ```linux
-> $ pip install matplotlib
+linux   > $ pip install matplotlib
+windows > python3 -m pip install matplotlib
 ```
 Run Program
 ```linux
-> $ cd medical-practice/Src && python3 M_P.py
+> $ cd Src && python3 M_P.py
+> Enter UNIX if you're using a Linux distribution or WINDOWS 
 ```
 
 ### NOTES

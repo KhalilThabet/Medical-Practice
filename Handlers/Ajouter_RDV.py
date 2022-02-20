@@ -5,7 +5,7 @@ sys.path.insert(1, "../")
 from Verifications.Cin import Cin_verif
 from .Date_Heure import Date_Heure
 
-def Ajouter_RDV():
+def Ajouter_RDV(System):
 
     RDV = open("../DATA/rdv.txt", "a")
     Cin = input("Veuillez saisir le Cin Du Patient !\t")
@@ -15,7 +15,7 @@ def Ajouter_RDV():
         )
         if Cin.upper() == "\Q":
             break
-    c = Date_Heure()
+    c = Date_Heure(System)
     ligne = Cin + " " + c + "\n"
     RDV.writelines(ligne)
     RDV.close()

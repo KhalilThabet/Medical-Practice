@@ -1,11 +1,10 @@
 import sys
 
 sys.path.insert(1, "../")
-import numpy as np
 import matplotlib.pyplot as plt
 
 
-def Consultation_An():
+def Consultation_An(System):
 
     File = open("../DATA/Nbr_consultation.txt")
     Liste = []

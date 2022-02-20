@@ -2,7 +2,7 @@ import sys
 
 sys.path.insert(1, "../")
 
-def Supprimer_patient():
+def Supprimer_patient(System):
     cin = input("Saisir le cin du patient a supprimer :\t")
     file = open("../DATA/patient.txt")
     Patient_a_conserver = []

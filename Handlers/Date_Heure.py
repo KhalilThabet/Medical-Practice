@@ -2,11 +2,13 @@ import os
 import sys
 
 sys.path.insert(1, "../")
-import getch as m
 
 
-def Date_Heure():  # fonction qui permet au user d'entrer la date et l'heure si demander
-
+def Date_Heure(System):  # fonction qui permet au user d'entrer la date et l'heure si demander
+    if System=="UNIX":
+        import getch as m
+    else:
+        import msvcrt as m
     while 1:
         i = 0
         F = ["_", "_", "/", "_", "_", "/", "_", "_", "_", "_"]
@@ -16,7 +18,11 @@ def Date_Heure():  # fonction qui permet au user d'entrer la date et l'heure si 
                 continue
             X = "".join(F)
             print(X)
-            Date = m.getch()
+            if System=="UNIX":
+                Date = m.getch()
+            else:
+                Date = m.getch().decode("utf-8") 
+            
             for j in Date:
                 try:
                     int(j)
@@ -25,7 +31,10 @@ def Date_Heure():  # fonction qui permet au user d'entrer la date et l'heure si 
                     a = 0
             F[i] = Date
             i += 1
-            os.system("clear")
+            if System=="UNIX":
+                os.system("clear")
+            else:
+                os.system("cls")
         if int(F[3] + F[4]) in [1, 3, 5, 7, 8, 10, 12]:
             if int(F[0] + F[1]) in range(31):
                 break
@@ -45,7 +54,11 @@ def Date_Heure():  # fonction qui permet au user d'entrer la date et l'heure si 
                 continue
             Y = "".join(A)
             print(Y)
-            Heure = m.getch()
+            if System=="UNIX":
+                Date = m.getch()
+            else:
+                Date = m.getch().decode("utf-8") 
+            
             for i in Heure:
                 try:
                     int(i)
@@ -54,7 +67,10 @@ def Date_Heure():  # fonction qui permet au user d'entrer la date et l'heure si 
                     a = 0
             A[j] = Heure
             j += 1
-            os.system("clear")
+            if System=="UNIX":
+                os.system("clear")
+            else:
+                os.system("cls")
         if (int(A[0] + A[1]) in range(23)) and (int(A[3] + A[4]) in range(59)):
             break
     X = "".join(F)
